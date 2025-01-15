@@ -60,7 +60,7 @@ if st.button("Analyze"):
             Driver, C, k, numericals = process_dob_and_create_numbers(name, dob, gender)
 
             st.markdown(f"### Numerological Analysis of {name}")
-            st.write(f"Driver: {Driver}, C: {C}, Kuva: {k}")
+            st.write(f"Driver: {Driver}, Conductor: {C}, Kua: {k}")
 
             st.markdown("### Lo Shu Square")
             rows = [
