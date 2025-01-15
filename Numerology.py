@@ -1,7 +1,5 @@
 import pandas as pd
 import numpy as np
-pip install tabulate
-
 
 def get_digital_root(n):
     """Calculate the digital root of a number."""
