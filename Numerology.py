@@ -1,8 +1,6 @@
 import pandas as pd
 import numpy as np
-pip install tabulate
-
-
+from tabulate import tabulate
 def get_digital_root(n):
     """Calculate the digital root of a number."""
     while n > 9:
@@ -85,11 +83,10 @@ def process_dob_and_create_numbers(name, dob, Gender):
     # Use tabulate to print
     print(f"Lo Shu Square :", name)
     print(tabulate(rows, tablefmt="grid"))
-
     print()
     print(f"Driver: {Driver}")
-    print(f"C: {C}")
-    print(f"Kuva: {k}")
+    print(f"Conductor: {C}")
+    print(f"Kua: {k}")
     print()
     if numericals.items() and numericals["Four_Nine_Two"][0] and numericals["Three_Five_Seven"][1] and numericals["Eight_One_Six"][2]:
         print("The Maha Raj Yog Plane is fulfulled ")
@@ -130,9 +127,3 @@ def process_dob_and_create_numbers(name, dob, Gender):
         print("The Action Plane is fulfulled ")
         pp = [[[Base["Four_Nine_Two"][2], Base["Three_Five_Seven"][2], Base["Eight_One_Six"][2]]]]
         print(tabulate(pp, tablefmt = "grid"))
-
-
-name = "Harshal Lokhande"
-dob = "27/04/1991"
-gender = "male"
-process_dob_and_create_numbers(name, dob, gender)
