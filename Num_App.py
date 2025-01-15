@@ -1,5 +1,6 @@
 import streamlit as st
 from datetime import datetime
+import pandas as pd
 
 def validate_date(date_str):
     """Validate date in DD/MM/YYYY format."""
