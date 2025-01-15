@@ -86,6 +86,12 @@ if st.button("Analyze"):
                 st.success("The Emotional Plane is fulfilled.")
             if numericals["Eight_One_Six"][0] and numericals["Eight_One_Six"][1] and numericals["Eight_One_Six"][2]:
                 st.success("The Practical Plane is fulfilled.")
+            if numericals["Four_Nine_Two"][0] and numericals["Three_Five_Seven"][0] and numericals["Eight_One_Six"][0]:
+                st.success("The Thought Plane is fulfilled.")
+            if numericals["Four_Nine_Two"][1] and numericals["Three_Five_Seven"][1] and numericals["Eight_One_Six"][1]:
+                st.success("The Will Plane is fulfilled.")
+            if numericals["Four_Nine_Two"][2] and numericals["Three_Five_Seven"][2] and numericals["Eight_One_Six"][2]:
+                st.success("The Action Plane is fulfilled.")
 
         except Exception as e:
             st.error(f"Error: {e}")
