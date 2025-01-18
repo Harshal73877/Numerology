@@ -119,21 +119,21 @@ if st.button("Analyze"):
 
                 # Check for planes
                 if numericals["Four_Nine_Two"][0] != "NA" and numericals["Three_Five_Seven"][1] != "NA" and numericals["Eight_One_Six"][2] != "NA":
-                    st.success("The Maha Raj Yog Plane is fulfilled")
+                    st.success("The Maha Raj Yog Plane is fulfilled [4, 5, 6]")
                 if numericals["Four_Nine_Two"][2] != "NA" and numericals["Three_Five_Seven"][1] != "NA" and numericals["Eight_One_Six"][0] != "NA":
-                    st.success("The Raj Yog Plane is fulfilled")
+                    st.success("The Raj Yog Plane is fulfilled [2, 5, 8]")
                 if all(x != "NA" for x in numericals["Four_Nine_Two"]):
-                    st.success("The Mental Plane is fulfilled")
+                    st.success("The Mental Plane is fulfilled [4, 9, 2]")
                 if all(x != "NA" for x in numericals["Three_Five_Seven"]):
-                    st.success("The Emotional Plane is fulfilled")
+                    st.success("The Emotional Plane is fulfilled [3, 5, 7]")
                 if all(x != "NA" for x in numericals["Eight_One_Six"]):
-                    st.success("The Practical Plane is fulfilled")
+                    st.success("The Practical Plane is fulfilled [8, 1, 6]")
                 if numericals["Four_Nine_Two"][0] != "NA" and numericals["Three_Five_Seven"][0] != "NA" and numericals["Eight_One_Six"][0] != "NA":
-                    st.success("The Thought Plane is fulfilled")
+                    st.success("The Thought Plane is fulfilled [4, 3, 8]")
                 if numericals["Four_Nine_Two"][1] != "NA" and numericals["Three_Five_Seven"][1] != "NA" and numericals["Eight_One_Six"][1] != "NA":
-                    st.success("The Will Plane is fulfilled")
+                    st.success("The Will Plane is fulfilled [9, 5, 1]")
                 if numericals["Four_Nine_Two"][2] != "NA" and numericals["Three_Five_Seven"][2] != "NA" and numericals["Eight_One_Six"][2] != "NA":
-                    st.success("The Action Plane is fulfilled")
+                    st.success("The Action Plane is fulfilled [2, 7, 6]")
                 small_title("Individual Numbers and Their Significance:", size=24)
                 if numericals["Eight_One_Six"][1] != "NA":
                     small_title("1 - Leadership and Willpower", size=18)
