@@ -24,6 +24,8 @@ def validate_date(date_str):
         return True
     except:
         return False
+def small_title(text, size=18):
+    st.markdown(f"<h1 style='font-size: {size}px;'>{text}</h1>", unsafe_allow_html=True)
 
 def get_digital_root(n):
     """Calculate the digital root of a number."""
@@ -132,6 +134,35 @@ if st.button("Analyze"):
                     st.success("The Will Plane is fulfilled")
                 if numericals["Four_Nine_Two"][2] != "NA" and numericals["Three_Five_Seven"][2] != "NA" and numericals["Eight_One_Six"][2] != "NA":
                     st.success("The Action Plane is fulfilled")
+                small_title("Individual Numbers and Their Significance:", size=24)
+                if numericals["Eight_One_Six"][1] != "NA":
+                    small_title("1 - Leadership and Willpower", size=18)
+                    st.write("Represents independence, self-reliance, ambition, and determination. It is often seen as the number of leadership and beginnings.")
+                if numericals["Four_Nine_Two"][2] != "NA":   
+                    small_title("2 - Partnership and Balance", size=18)
+                    st.write("Symbolizes duality, harmony, cooperation, sensitivity, and emotional balance. It is associated with relationships and adaptability.")
+                if numericals["Three_Five_Seven"][0] != "NA":
+                    small_title("3 - Creativity and Expression", size=18)
+                    st.write("Reflects creativity, communication, self-expression, and joy. It is often linked to optimism and artistic talent.")
+                if numericals["Four_Nine_Two"][0] != "NA":
+                    small_title("4 - Stability and Practicality", size=18)
+                    st.write("Represents order, discipline, responsibility, and a foundation. It is associated with practicality and hard work.")
+                if numericals["Three_Five_Seven"][1] != "NA":
+                    small_title("5 - Freedom and Change</h1>", size=18)
+                    st.write("Denotes versatility, adaptability, curiosity, and freedom. It represents a dynamic and adventurous spirit.")
+                if numericals["Eight_One_Six"][2] != "NA":
+                    small_title("6 - Love and Responsibility", size=18)
+                    st.write("Symbolizes nurturing, care, harmony, and responsibility, especially in relationships and family.")
+                if numericals["Three_Five_Seven"][2] != "NA":
+                    small_title("7 - Spirituality and Introspection", size=18)
+                    st.write("Represents deep thinking, intuition, spirituality, and introspection. It is often associated with mysticism and knowledge.")
+                if numericals["Eight_One_Six"][0] != "NA":
+                    small_title("8 - Power and Abundance", size=18)
+                    st.write("Reflects material success, ambition, authority, and financial power. It is linked to practicality and management.")
+                if numericals["Four_Nine_Two"][1] != "NA":
+                    small_title("9 - Compassion and Universal Love", size=18)
+                    st.write("Represents altruism, humanitarianism, idealism, and wisdom. It is the number of endings and higher consciousness")
+                                  
 
             except Exception as e:
                 st.error(f"Error: {e}")
