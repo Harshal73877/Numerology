@@ -146,7 +146,7 @@ if st.button("Analyze"):
                     st.write("Reflects creativity, communication, self-expression, and joy. It is often linked to optimism and artistic talent.")
                 if numericals["Four_Nine_Two"][0] != "NA":
                     small_title("4 - Stability and Practicality", size=18)
-                    st.write("Represents order, discipline, responsibility, and a foundation. It is associated with practicality and hard work.")
+                    st.write("Represents order, discipline, responsibility, and a foundation. It is associated with practicality and hard work and arduous.")
                 if numericals["Three_Five_Seven"][1] != "NA":
                     small_title("5 - Freedom and Change</h1>", size=18)
                     st.write("Denotes versatility, adaptability, curiosity, and freedom. It represents a dynamic and adventurous spirit.")
